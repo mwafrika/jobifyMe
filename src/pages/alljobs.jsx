@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Aside from '../components/aside';
 import Header from '../components/header';
+import Card from '../components/card';
 
 const dashboard = () => {
   const [open, setOpen] = useState(false);
@@ -86,6 +87,19 @@ const dashboard = () => {
               </button>
             </div>
           </form>
+        </div>
+        {/* handle cards  */}
+        <div className='w-[90%] mx-auto my-12 py-0 px-0  rounded-lg'>
+          <h2 className='text-xl font-bold text-[#102a43] capitalize my-4'>
+            12 jobs found
+          </h2>
+          <div className='grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-y-8 gap-x-4'>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
       </div>
     </main>
