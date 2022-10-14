@@ -5,6 +5,9 @@ import Register from './components/register';
 import NotFound from './components/notFound';
 import Dashboard from './pages/dashboard';
 import Jobs from './pages/alljobs';
+import AddJob from './pages/add-job';
+import Profile from './pages/profile';
+
 function App() {
   return (
     <Router>
@@ -14,6 +17,8 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/jobs' element={<Jobs />} />
+        <Route path='/new' element={<AddJob />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>

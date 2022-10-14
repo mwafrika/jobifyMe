@@ -30,7 +30,7 @@ const aside = () => {
             </Link>
           </li>
           <li className='py-4 pr-0 pl-10'>
-            <Link to='/'>
+            <Link to='/new'>
               <span className='flex items-center gap-x-3'>
                 <img src='/add-job.svg' alt='add' className='w-6' />
                 <p>Add Job</p>
@@ -38,7 +38,7 @@ const aside = () => {
             </Link>
           </li>
           <li className='py-4 pr-0 pl-10'>
-            <Link to='/'>
+            <Link to='/profile'>
               <span className='flex items-center gap-x-3'>
                 <img src='/profile.svg' alt='profile' className='w-6' />
                 <p>Profile</p>
