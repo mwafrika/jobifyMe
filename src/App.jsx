@@ -3,8 +3,8 @@ import Home from './components/home';
 import Login from './components/login';
 import Register from './components/register';
 import NotFound from './components/notFound';
-import Dashboard from './components/dashboard';
-
+import Dashboard from './pages/dashboard';
+import Jobs from './pages/alljobs';
 function App() {
   return (
     <Router>
@@ -13,6 +13,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/jobs' element={<Jobs />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>

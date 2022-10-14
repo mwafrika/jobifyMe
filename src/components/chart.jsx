@@ -8,11 +8,61 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-const BarChartComponent = ({ data }) => {
+const BarChartComponent = () => {
+  const data = [
+    {
+      count: 2,
+      date: 'Jan 2022',
+    },
+    {
+      count: 3.5,
+      date: 'Feb 2022',
+    },
+    {
+      count: 3,
+      date: 'Mar 2022',
+    },
+    {
+      count: 2,
+      date: 'Apr 2022',
+    },
+    {
+      count: 1,
+      date: 'May 2022',
+    },
+    {
+      count: 4,
+      date: 'Jun 2022',
+    },
+    {
+      count: 3,
+      date: 'Jul 2022',
+    },
+    {
+      count: 8,
+      date: 'Aug 2022',
+    },
+    {
+      count: 2,
+      date: 'Sep 2022',
+    },
+    {
+      count: 3,
+      date: 'Oct 2022',
+    },
+    {
+      count: 2,
+      date: 'Nov 2022',
+    },
+    {
+      count: 3,
+      date: 'Dec 2022',
+    },
+  ];
   return (
     <ResponsiveContainer width='100%' height={300}>
       <BarChart
-        data={(1, 2)}
+        data={data}
         margin={{
           top: 50,
         }}
