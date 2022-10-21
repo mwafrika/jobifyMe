@@ -20,42 +20,58 @@ const dashboard = () => {
             <div className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-y-8 gap-x-4'>
               <div className='flex flex-col mb-0'>
                 <label
-                  htmlFor='search'
+                  htmlFor='firstName'
                   className='mb-2 capitalize text-[#102a43]'
                 >
                   first name
                 </label>
-                <input className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full' />
+                <input
+                  name='firstName'
+                  type='text'
+                  className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full'
+                />
               </div>
               <div className='flex flex-col mb-0'>
                 <label
-                  htmlFor='search'
+                  htmlFor='lastName'
                   className='mb-2 capitalize text-[#102a43]'
                 >
-                  first name
+                  last name
                 </label>
-                <input className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full' />
+                <input
+                  name='lastName'
+                  type='text'
+                  className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full'
+                />
               </div>
               <div className='flex flex-col mb-0'>
                 <label
-                  htmlFor='search'
+                  htmlFor='email'
                   className='mb-2 capitalize text-[#102a43]'
                 >
-                  first name
+                  email
                 </label>
-                <input className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full' />
+                <input
+                  name='email'
+                  type='email'
+                  className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full'
+                />
               </div>
               <div className='flex flex-col mb-0'>
                 <label
-                  htmlFor='search'
+                  htmlFor='location'
                   className='mb-2 capitalize text-[#102a43]'
                 >
-                  first name
+                  location
                 </label>
-                <input className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full' />
+                <input
+                  name='location'
+                  type='text'
+                  className='bg-[#f0f4f8] rounded-md border border-[#bcccdc] border-solid h-[35px] w-full'
+                />
               </div>
               <button className='flex mb-0 bg-[#2cb1bc] hover:bg-[#16808a] hover:text-white py-4 px-10 justify-center capitalize items-center h-9 rounded-md self-end text-white'>
-                submit
+                save changes
               </button>
             </div>
           </form>
